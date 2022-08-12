@@ -30,22 +30,20 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: What country is this issue related to?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Colombia (COL)
+        - Mexico (MEX)
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What files are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - stata
+        - R
   - type: textarea
     id: logs
     attributes:
