@@ -16,7 +16,7 @@ body:
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -27,25 +27,44 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: Country
+    attributes:
+      label: Country
+      description: What country is this issue related to?
+      options:
+        - Colombia (COL)
+        - Mexico (MEX)
+        - Brasil (BRA)
+        - India (IDN)
+        - Indonesia (IND)
+        - Pakistan (PAK)
+        - Thailand (THA)
+        - Zimbabwe (ZWE)
+        - Chile (CHL)
+        - Egypt (EGY)
+        - Turkey (TUR)
+        - South Africa (ZAR)
+        - The Philippines (PHL)
+        - Not country related (please elaborate in the box below)
+  - type: dropdown
     id: version
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
+      label: What version are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - V01
+        - V02
+        - V03
+        - V04
+        - Multiple (please explain in the log)
+  - type: textarea
+    id: year
+    attributes:
+      label: What year are you seeing the problem on?
+      description: Please, specify the year(s) where the problem is present.
+      render: shell
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
@@ -56,7 +75,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/worldbank/gld/blob/c3e0e28037247a64d7348824c9fdf03d142ad1d7/Support/E%20-%20Community%20Guidelines/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
