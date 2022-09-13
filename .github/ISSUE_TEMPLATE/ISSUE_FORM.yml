@@ -62,7 +62,6 @@ body:
     attributes:
       label: What year are you seeing the problem on?
       description: Please, specify the year(s) where the problem is present.
-      render: shell
     validations:
       required: true
   - type: textarea
