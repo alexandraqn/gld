@@ -17,6 +17,22 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+       - type: input
+    id: country
+    attributes:
+      label: Country Name(s)
+      description: What is the name of the country(ies) in which you found this issue?
+      placeholder: ex. use the iso code name for example COL (ISO code for colombia).
+    validations:
+      required: True
+       - type: input
+    id: Year
+    attributes:
+      label: Years of occurrence
+      description: What is the year in which you found this issue?
+      placeholder: ex. 1990 and 1996.
+    validations:
+      required: True
   - type: textarea
     id: what-happened
     attributes:
@@ -26,37 +42,17 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Relevant code
+      description: Please copy and paste any relevant code output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Code of Conductlow our [Code of Conduct](
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/worldbank/gld/blob/9b84af121806669dbf4b4e19e6fa5a80fbdf30a2/Support/E%20-%20Community%20Guidelines/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
