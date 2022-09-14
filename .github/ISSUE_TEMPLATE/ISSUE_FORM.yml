@@ -22,14 +22,14 @@ body:
     attributes:
       label: Country Name
       description: What is the name of the country in which you found this issue?
-      placeholder: ex. use the iso code name for example COL, ISO code for colombia.
+      placeholder: ex. use the iso code name for example COL is the ISO code for Colombia.
     validations:
       required: True
   - type: input
     id: Year
     attributes:
       label: Years of occurrence
-      description: What is the year in which you found this issue?
+      description: What is the year of this issue?
       placeholder: ex. 1990 and 1996.
     validations:
       required: True
