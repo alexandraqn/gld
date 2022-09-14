@@ -1,5 +1,5 @@
 ---
-name: Submit a bug report through screenshots or images
+name: Submit a bug report through screenshot(s) or image(s)
 about: Upload or attach a file accompanied by the description of your bug report.
 title: ''
 labels: ''
