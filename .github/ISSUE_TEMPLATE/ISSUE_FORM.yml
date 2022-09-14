@@ -22,7 +22,7 @@ body:
     attributes:
       label: Country Name
       description: What is the name of the country in which you found this issue?
-      placeholder: "ex. use the iso code name for example COL (ISO code for colombia)."
+      placeholder: ex. use the iso code name for example COL, ISO code for colombia.
     validations:
       required: True
        - type: input
