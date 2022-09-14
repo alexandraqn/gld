@@ -17,7 +17,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-       - type: input
+  - type: input
     id: country
     attributes:
       label: Country Name
@@ -25,7 +25,7 @@ body:
       placeholder: ex. use the iso code name for example COL, ISO code for colombia.
     validations:
       required: True
-       - type: input
+  - type: input
     id: Year
     attributes:
       label: Years of occurrence
