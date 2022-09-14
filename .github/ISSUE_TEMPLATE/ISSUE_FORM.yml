@@ -30,7 +30,7 @@ body:
     id: Country
     attributes:
       label: Country
-      description: What country is this issue related to? Please indicate the name and the ISO code (e.g. COL)
+      description: What country is this issue related to? Please indicate the name and the ISO code.
        placeholder: Tell us the country name here.
       value: "e.g. MEX "
     validations:
