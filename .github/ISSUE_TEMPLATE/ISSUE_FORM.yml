@@ -20,8 +20,8 @@ body:
        - type: input
     id: country
     attributes:
-      label: "Country Name(s)"
-      description: What is the name of the country(ies) in which you found this issue?
+      label: Country Name
+      description: What is the name of the country in which you found this issue?
       placeholder: "ex. use the iso code name for example COL (ISO code for colombia)."
     validations:
       required: True
